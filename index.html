@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pokedex-container">
+        <h1>Pokédex</h1>
+        <div class="search-container">
+
+            <input type="text" 
+            name="search-input" id="search-input"
+            placeholder="Busca Pokémon por ID o Nombre"/>
+
+            <button id="search-button">Busca</button>
+
+        </div>
+        <div class="pokemon-list" id="pokemon-list">
+        </div>        
+    </div>
+<!--detalle de pokemon, esta clase al renderizar la pagina no se va a ver por el style="display: none;-->
+    <div class="pokemon-detail" id="pokemon-detail" style="display: none;">
+        <button id="back-button">vuelta a la pokédex</button>
+        <div id="pokemon-info"></div>
+    </div>
+
+    <div class="pagination-buttons">
+        <button id="prev-button">Anterior</button>
+        <button id="next-button">Siguiente</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
